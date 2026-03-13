@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My Game Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+font-family:sans-serif;
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#111827;
+padding:15px;
+font-size:24px;
+text-align:center;
+}
+
+.game-container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:80vh;
+}
+
+iframe{
+width:900px;
+height:600px;
+border:none;
+background:black;
+}
+
+.games{
+display:flex;
+gap:10px;
+justify-content:center;
+padding:10px;
+}
+
+button{
+padding:10px 20px;
+font-size:16px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+My Game Site
+</header>
+
+<div class="games">
+<button onclick="loadGame('games/game1/index.html')">Game 1</button>
+<button onclick="loadGame('games/game2/index.html')">Game 2</button>
+</div>
+
+<div class="game-container">
+<iframe id="gameFrame" src=""></iframe>
+</div>
+
+<script>
+function loadGame(url){
+document.getElementById("gameFrame").src = url;
+}
+</script>
+
+</body>
+</html>
