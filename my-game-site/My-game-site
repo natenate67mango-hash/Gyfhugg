@@ -1,0 +1,8 @@
+my-game-site/
+│
+├── index.html         ← main page (the code I gave you)
+└── games/             ← folder for all your games
+    ├── game1/
+    │   └── index.html  ← your first game files
+    └── game2/
+        └── index.html  ← your second game files
